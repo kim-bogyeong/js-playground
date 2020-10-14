@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = 0;
+        var n = -1; //n 의 초기값이 0 일시 바로 종료됨. 0이 아닌 다른수는 상관없음 !
+        var plus = -1; // -1 부터 시작한 이유는 마지막에 입력하는 0은 종료를 하기위해 작성하므로 더하지 않기때문에 ! 
+        while (n != 0){
+            n = Number(prompt("숫자를 입력해주세요 0 = 종료"));
+            sum = sum + n;
+            plus++;
+            console.log(plus, n ,sum);
+        }
+        document.write("입력한 " +  plus + "수의 합은 " +  sum + "입니다.");
+    </script>
+</body>
+</html>

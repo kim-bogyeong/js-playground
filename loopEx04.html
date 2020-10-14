@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var N = Number( prompt("2이상의 정수를입력하세요.") );
+        for (var i=2; i < N; i++){
+            if(N % i === 0){
+                alert (N+ "은 소수아니에요.. [" + i + "] ");
+                break ;
+            }else{
+                alert("소수에요");
+                break ;
+            }
+        }
+        
+    </script>
+</body>
+</html>
